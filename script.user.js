@@ -25,7 +25,7 @@ function removePrefix(url) {
     // The entry stamp_database in localStorage overwrites the default resource.
     // This is useful for testing. You can upload an experimental database to e.g. Github Gists,
     // write the link into localStorage and work with your development version
-    fetch(localStorage.getItem("stamp_database") ?? "https://raw.githubusercontent.com/windupbird144/gc-stamp-album-helper/main/stamps.json", { cache: "no-cache" })
+    fetch(localStorage.getItem("stamp_database") ?? "https://raw.githubusercontent.com/kateslines/gc-stamp-album-helper/refs/heads/main/stamps.json", { cache: "no-cache" })
         .then(res => res.json())
         .then(main)
 
